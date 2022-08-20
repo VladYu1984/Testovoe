@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo-container">
+        <div class="right-functioin">Добавление товара</div>
+        <button class="button-default">
+            <p>По умолчанию</p>
+            <span class="material-symbols-outlined">
+                expand_more
+                </span>
+        </button>
+    </div>
+    <div class="menu">
+        <form name="myForm" class="form-container">
+            <div class="text">
+                <span class="card__text--1">Наименование товара</span>
+                <div class="circle"></div>
+            </div>
+            <input type="text" class="product__name" placeholder="Введите наименование товара" required>
+            <div class="text">
+                <span class="card__text--2">Описание товара</span>
+            </div>
+            <input type="text" class="product__info" placeholder="Введите описание товара">
+            <div class="text">
+                <span class="card__text--3">Ссылка на изображение товара</span>
+                <div class="circle"></div>
+            </div>
+            <input type="url" class="product__link" placeholder="Введите ссылку" pattern="https://.*" required>
+            <div class="text">
+                <span class="card__text--4">Цена товара</span>
+                <div class="circle"></div>
+            </div>
+            <input type="text" id="costId" class="product__cost" placeholder="Введите цену" required>
+            <button class="button-add">Добавить товар</button>
+        </form>
+
+        <div class="products">
+            <div class="card">
+                <div class="card__image">
+                    <img class="backGroundImage" src="/img/e88ef4c6003a678c0c9d6a1b91606ae9.jpeg" alt="">
+                    <button class="close">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+                <span class="card__name">Наименование товара</span>
+                <p class="card__info">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                <span class="card__cost">1 000 руб.</span>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img class="backGroundImage" src="/img/e88ef4c6003a678c0c9d6a1b91606ae9.jpeg" alt="">
+                                        <button class="close">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+                <span class="card__name">Наименование товара</span>
+                <p class="card__info">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                <span class="card__cost">5 000 руб.</span>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img class="backGroundImage" src="/img/e88ef4c6003a678c0c9d6a1b91606ae9.jpeg" alt="">
+                    <button class="close">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+                <span class="card__name">Наименование товара</span>
+                <p class="card__info">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                <span class="card__cost">10 000 руб.</span>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img class="backGroundImage" src="/img/e88ef4c6003a678c0c9d6a1b91606ae9.jpeg" alt="">
+                    <button class="close">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+                <span class="card__name">Наименование товара</span>
+                <p class="card__info">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                <span class="card__cost">15 000 руб.</span>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img class="backGroundImage" src="/img/e88ef4c6003a678c0c9d6a1b91606ae9.jpeg" alt="">
+                    <button class="close">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+                <span class="card__name">Наименование товара</span>
+                <p class="card__info">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                <span class="card__cost">20 000 руб.</span>
+            </div>
+            <div class="card">
+                <div class="card__image">
+                    <img class="backGroundImage" src="/img/e88ef4c6003a678c0c9d6a1b91606ae9.jpeg" alt="">
+                    <button class="close">
+                        <span class="material-symbols-outlined">delete</span>
+                    </button>
+                </div>
+                <span class="card__name">Наименование товара</span>
+                <p class="card__info">Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк</p>
+                <span class="card__cost">25 000 руб.</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="/main.js"></script>
+</body>
+</html>
